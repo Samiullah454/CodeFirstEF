@@ -1,0 +1,42 @@
+﻿@model CodeFirstEF.Models.Department
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Department</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeptSubName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptSubName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DeptId }, new { @class = "btn btn-primary" }) 
+    @Html.ActionLink("Back to List", "Index")
+</p>
